@@ -71,18 +71,18 @@ class _MainApp extends ConsumerWidget {
               const SizedBox(height: 60),
               ElevatedButton(
                 onPressed: () => notifier.updateData(Random().nextInt(100)),
-                child: const Text('= AsyncData'),
+                child: const Text('state = AsyncData'),
               ),
               const SizedBox(height: 4),
               OutlinedButton(
                 onPressed: () => notifier.updateLoading(),
-                child: const Text('= AsyncLoading'),
+                child: const Text('state = AsyncLoading'),
               ),
               const SizedBox(height: 4),
               TextButton(
                 style: TextButton.styleFrom(foregroundColor: Colors.red),
                 onPressed: () => notifier.updateError(),
-                child: const Text('= AsyncError'),
+                child: const Text('state = AsyncError'),
               ),
               const SizedBox(height: 4),
               ElevatedButton(
